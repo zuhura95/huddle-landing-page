@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans',sans-serif;
+    background-image: url('./images/bg-desktop.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color:  hsl(257, 40%, 49%);
+    color: white;
+    font-size: 14px;
+    min-height: 100vh;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+    
+}
+
+.flex{
+    display: flex;
+    margin: 100px 0;
+}
+
+
+.flex > div:first-child{
+    flex: 60%;
+    margin-right: 20px;
+}
+
+
+
+.illustration-mobile{
+    display: none;
+}
+.illustration{
+
+    width: 695px;
+    height: 491px;
+
+}
+.right{
+    width: 46%;
+}
+
+.inner-container{
+flex: 40%;
+margin-left: 20px;
+    
+
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p{
+margin-bottom: 20px;
+}
+
+button{
+
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: 2px 5px 10px  hsla(0, 0%, 11%, 0.514) ;
+    outline: none;
+     cursor: pointer;
+     color: hsl(257, 40%, 49%);
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
+
+
+}
+
+button:hover{
+    background-color:  hsl(300, 69%, 71%);
+    color: white;
+    box-shadow: 5px 10px 12px  hsla(0, 0%, 11%, 0.514) ;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+	list-style-type: none;
+ 
+   
+}
+ .social-icons a{
+
+border-radius: 50%;
+border: 2px solid white;
+width: 50px;
+height: 50px;
+color: white;
+margin-left: 20px;
+cursor: pointer;
+align-items: center;
+text-decoration: none;
+justify-content: center;
+display:inline-flex;
+}
+
+
+.social-icons a:hover{
+    border: 2px solid  hsl(300, 69%, 71%);
+    color:  hsl(300, 69%, 71%);
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .body{
+        background-image: none;
+    }
+
+    .flex{
+        flex-direction: column;
+        margin: 50px, 0;
+    }
+    .flex  > div:first-child{
+        flex: 1;
+/*         
+        background-image: url('./images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:hsl(257, 40%, 49%); */
+        margin-right: 0;
+    }
+   
+    
+    .inner-container{
+       flex: 1;
+       text-align: center;
+       margin-left: 0;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+   
+}
